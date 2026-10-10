@@ -1,0 +1,92 @@
+/* ============================================================
+   泠川 · 设计变量（tokens）
+   母题：静水 · 局部下潜
+   ============================================================ */
+
+:root {
+  /* ---- 色彩 · 水与墨 ---- */
+  --ink:        #0b0f14; /* 水底 · 墨黑 */
+  --ink-2:      #10161f;
+  --deep:       #16202e; /* 深水 */
+  --graphite:   #26313f; /* 石墨 */
+  --slate:      #45546a; /* 岩灰蓝 */
+  --mist:       #8296ab; /* 雾 */
+  --mist-soft:  #a7b8c8; /* 浅雾 */
+  --moon:       #e8ecef; /* 月白 */
+  --moon-dim:   #cdd6dd;
+
+  --blue-abyss: #0f1c33; /* 更深的蓝 */
+  --blue-deep:  #1b2a4a;
+  --blue:       #2b4c7e;
+  --blue-light: #5b8fb9; /* 水色 */
+  --frost:      #9fc6d8; /* 霜青 */
+  --liuli:      #c9e4ec; /* 琉璃（点缀） */
+
+  /* 语义色 */
+  --bg:         var(--ink);
+  --fg:         var(--moon);
+  --fg-soft:    var(--mist-soft);
+  --fg-faint:   var(--slate);
+  --accent:     var(--frost);
+  --accent-2:   var(--blue-light);
+  --line:       rgba(159, 198, 216, 0.14);
+  --line-soft:  rgba(159, 198, 216, 0.08);
+
+  /* ---- 字体 ---- */
+  --font-display: "LXGW WenKai", "LXGW WenKai Screen", "Kaiti SC", "STKaiti",
+                  "KaiTi", "Songti SC", "Noto Serif SC", serif;
+  --font-body:    system-ui, -apple-system, "Segoe UI", "PingFang SC",
+                  "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+  --font-mono:    ui-monospace, "SFMono-Regular", "Cascadia Code", Consolas, monospace;
+
+  /* 流体字号 */
+  --fs-hero:  clamp(2.4rem, 7vw, 5rem);
+  --fs-h1:    clamp(1.8rem, 4.5vw, 3rem);
+  --fs-h2:    clamp(1.4rem, 3vw, 2rem);
+  --fs-h3:    clamp(1.15rem, 2.2vw, 1.4rem);
+  --fs-body:  clamp(1rem, 1.4vw, 1.075rem);
+  --fs-sm:    0.875rem;
+  --fs-xs:    0.78rem;
+
+  /* ---- 间距 ---- */
+  --sp-1: 0.25rem;
+  --sp-2: 0.5rem;
+  --sp-3: 0.75rem;
+  --sp-4: 1rem;
+  --sp-5: 1.5rem;
+  --sp-6: 2rem;
+  --sp-7: 3rem;
+  --sp-8: 4.5rem;
+  --sp-9: 7rem;
+  --sp-10: 10rem;
+
+  /* ---- 版心 ---- */
+  --measure: 62ch;      /* 舒适正文行宽 */
+  --container: 72rem;   /* 内容最大宽度 */
+  --gutter: clamp(1.25rem, 5vw, 4rem);
+
+  /* ---- 圆角 ---- */
+  --r-1: 2px;
+  --r-2: 4px;
+  --r-3: 10px;
+  --r-full: 999px;
+
+  /* ---- 阴影 / 光 ---- */
+  --glow-frost: 0 0 24px rgba(159, 198, 216, 0.18);
+  --shadow-deep: 0 24px 60px -30px rgba(0, 0, 0, 0.9);
+
+  /* ---- 动效 ---- */
+  --ease-water: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --ease-out:   cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-1: 0.35s;
+  --dur-2: 0.7s;
+  --dur-3: 1.4s;
+
+  /* ---- 层级 ---- */
+  --z-ambient: 0;
+  --z-content: 1;
+  --z-header: 50;
+  --z-lightbox: 100;
+
+  color-scheme: dark;
+}
