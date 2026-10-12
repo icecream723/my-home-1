@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /editor.html
 
 # 站点地图
 Sitemap: https://example.com/sitemap.xml
